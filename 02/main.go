@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	"regexp"
 	"strconv"
 	"strings"
 	"time"
@@ -15,14 +14,13 @@ func Part1(input string) string {
 	s := strings.Split(input, "\n")
 	total:= 0
 	for _, line := range s {
-		re, _ := regexp.Compile(`(\d*)-(\d*) (.): (.*)`)
-
-		matches := re.FindAllStringSubmatch(line,-1)
-		match := matches[0]
-		min,_ := strconv.Atoi(match[1])
-		max,_ := strconv.Atoi(match[2])
-		char := match[3]
-		pwd := match[4]
+		split := strings.Split(line, ": ")
+		meta, pwd := split[0], split[1]
+		split = strings.Split(meta, " ")
+		minmax, char := split[0], split[1]
+		split = strings.Split(minmax, "-")
+		min, _ := strconv.Atoi(split[0])
+		max, _ := strconv.Atoi(split[1])
 		count := strings.Count(pwd, char)
 		if count >= min && count <= max {
 			total += 1
@@ -36,13 +34,13 @@ func Part2(input string) string {
 	s := strings.Split(input, "\n")
 	total:= 0
 	for _, line := range s {
-		re, _ := regexp.Compile(`(\d*)-(\d*) (.): (.*)`)
-		matches := re.FindAllStringSubmatch(line,-1)
-		match := matches[0]
-		min,_ := strconv.Atoi(match[1])
-		max,_ := strconv.Atoi(match[2])
-		char := match[3]
-		pwd := match[4]
+		split := strings.Split(line, ": ")
+		meta, pwd := split[0], split[1]
+		split = strings.Split(meta, " ")
+		minmax, char := split[0], split[1]
+		split = strings.Split(minmax, "-")
+		min, _ := strconv.Atoi(split[0])
+		max, _ := strconv.Atoi(split[1])
 		if (string(pwd[min-1])) == char != (string(pwd[max-1]) == char) {
 			total += 1
 		}
