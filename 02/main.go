@@ -49,9 +49,11 @@ func Part2(input string) string {
 }
 
 func main() {
+	start := time.Now()
 	bytes, _ := ioutil.ReadFile("02/input.txt")
-	start1 := time.Now()
-	fmt.Println("Part 1: " + Part1(string(bytes)), "Time", time.Since(start1))
-	start2 := time.Now()
-	fmt.Println("Part 2: " + Part2(string(bytes)),"Time", time.Since(start2))
+	fmt.Println("Read file in: ", time.Since(start))
+	start = time.Now()
+	fmt.Println("Part 1: " + Part1(string(bytes)), "Time", time.Since(start))
+	start = time.Now()
+	fmt.Println("Part 2: " + Part2(string(bytes)),"Time", time.Since(start))
 }
