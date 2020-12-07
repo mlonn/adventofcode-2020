@@ -15,9 +15,10 @@ type Bag struct {
 	count int
 	bags []Bag
 }
-func parseBags(input string) map[string]Bag {
+var bags = make(map[string]Bag)
+
+func parseBags(input string) {
 	bagRegex, _ := regexp.Compile("(\\d+) (.*) bags?")
-	bags := make(map[string]Bag)
 	for _, bagString := range strings.Split(input, "\n") {
 		split := strings.Split(bagString, " bags contain")
 		color := split[0]
@@ -33,37 +34,35 @@ func parseBags(input string) map[string]Bag {
 		}
 		bags[bag.color] = bag
 	}
-	return bags
 }
 
-func canContainGold(bagMap map[string]Bag, color string) bool{
+func canContainGold(color string) bool{
 	if color == "shiny gold" {
 		return true
 	}
-	for _, containedBag := range bagMap[color].bags {
-		if canContainGold(bagMap, containedBag.color){
+	for _, containedBag := range bags[color].bags {
+		if canContainGold(containedBag.color){
 			return true
 		}
 	}
 	return false
 }
 
-func countBags(bagMap map[string]Bag, color string) int{
+func countBags(color string) int{
 	count := 0
-	bag := bagMap[color]
+	bag := bags[color]
 	for _, containedBag := range bag.bags {
-		subCount := countBags(bagMap, containedBag.color)
+		subCount := countBags(containedBag.color)
 		count += containedBag.count + containedBag.count * subCount
 	}
 	return count
 }
 
 // Part1 Part 1 of puzzle
-func Part1(input string) string {
+func Part1() string {
 	sum := 0
-	bagMap := parseBags(input)
-	for _, bag := range bagMap {
-		if canContainGold(bagMap, bag.color) && bag.color != "shiny gold" {
+	for _, bag := range bags {
+		if canContainGold(bag.color) && bag.color != "shiny gold" {
 			sum++
 		}
 	}
@@ -73,18 +72,20 @@ func Part1(input string) string {
 
 
 // Part2 Part2 of puzzle
-func Part2(input string) string {
-	bags := parseBags(input)
-	return "Answer " + strconv.Itoa(countBags(bags, "shiny gold"))
+func Part2() string {
+	return "Answer " + strconv.Itoa(countBags("shiny gold"))
 }
 
 func main() {
 	start := time.Now()
 	data, _ := ioutil.ReadFile("07/input.txt")
 	input := string(bytes.TrimSpace(data))
-	fmt.Println("Read file in: ", time.Since(start))
+	fmt.Println("Read file: ", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: " + Part1(input), "Time", time.Since(start))
+	parseBags(input)
+	fmt.Println("Parsed data: ", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + Part2(input),"Time", time.Since(start))
+	fmt.Println("Part 1: " + Part1(), "Time", time.Since(start))
+	start = time.Now()
+	fmt.Println("Part 2: " + Part2(),"Time", time.Since(start))
 }
