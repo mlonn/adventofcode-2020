@@ -66,26 +66,26 @@ func Part1() string {
 			sum++
 		}
 	}
-	return "Answer " + strconv.Itoa(sum)
+	return strconv.Itoa(sum)
 }
 
 
 
 // Part2 Part2 of puzzle
 func Part2() string {
-	return "Answer " + strconv.Itoa(countBags("shiny gold"))
+	return strconv.Itoa(countBags("shiny gold"))
 }
 
 func main() {
 	start := time.Now()
 	data, _ := ioutil.ReadFile("07/input.txt")
 	input := string(bytes.TrimSpace(data))
-	fmt.Println("Read file: ", time.Since(start))
+	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
 	parseBags(input)
-	fmt.Println("Parsed data: ", time.Since(start))
+	fmt.Println("Parse data: \t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: " + Part1(), "Time", time.Since(start))
+	fmt.Println("Part 1: " + Part1(), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + Part2(),"Time", time.Since(start))
+	fmt.Println("Part 2: " + Part2(),"\t", time.Since(start))
 }
