@@ -1,9 +1,8 @@
 package main
 
 import (
-	"bytes"
+	"advent-of-code-2020/utils"
 	"fmt"
-	"io/ioutil"
 	"sort"
 	"strconv"
 	"strings"
@@ -62,8 +61,7 @@ func Part2(input string, weakness int) int {
 
 func main() {
 	start := time.Now()
-	data, _ := ioutil.ReadFile("09/input.txt")
-	input := string(bytes.TrimSpace(data))
+	input := utils.Input(2020,9)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
 	weakness := Part1(input)

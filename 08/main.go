@@ -1,9 +1,8 @@
 package main
 
 import (
-	"bytes"
+	"advent-of-code-2020/utils"
 	"fmt"
-	"io/ioutil"
 	"strconv"
 	"strings"
 	"time"
@@ -101,11 +100,9 @@ func Part2(input string) string {
 
 func main() {
 	start := time.Now()
-	data, _ := ioutil.ReadFile("08/input.txt")
-	input := string(bytes.TrimSpace(data))
+	input := utils.Input(2020,8)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
-
 	fmt.Println("Parse data: \t", time.Since(start))
 	start = time.Now()
 	fmt.Println("Part 1: " + Part1(input), "\t", time.Since(start))

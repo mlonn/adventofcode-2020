@@ -1,8 +1,8 @@
 package main
 
 import (
+	"advent-of-code-2020/utils"
 	"fmt"
-	"io/ioutil"
 	"sort"
 	"strconv"
 	"strings"
@@ -87,12 +87,9 @@ func Part2(input string) string {
 }
 
 func main() {
+	file := utils.Input(2020,5)
 	start := time.Now()
-	bytes, _ := ioutil.ReadFile("05/input.txt")
-	input := string(bytes)
-	fmt.Println("Read file in: ", time.Since(start))
+	fmt.Println("Part 1: " + Part1(file), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: " + Part1(input), "Time", time.Since(start))
-	start = time.Now()
-	fmt.Println("Part 2: " + Part2(input),"Time", time.Since(start))
+	fmt.Println("Part 2: " + Part2(file),"Time", time.Since(start))
 }
