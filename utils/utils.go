@@ -12,7 +12,7 @@ import (
 // Input returns the input for the specified year and day as a string,
 // downloading it if it does not already exist on disk.
 func Input(year, day int) string {
-	os.Mkdir("inputs", 0755)
+	os.Mkdir("./inputs", 0755)
 	filename := fmt.Sprintf("./inputs/%v.txt", day)
 	session, _ := ioutil.ReadFile("./session")
 	if _, err := os.Stat(filename); err != nil {
