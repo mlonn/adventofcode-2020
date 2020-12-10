@@ -10,7 +10,7 @@ import (
 
 
 // Part1 Part 1 of puzzle
-func Part1(input string) string {
+func Part1(input string) int {
 	s := strings.Split(input, "\n")
 	m := make(map[int]int)
 	for _, expense := range s {
@@ -18,15 +18,15 @@ func Part1(input string) string {
 		complement := 2020 - i
 		_, found := m[complement]
 		if found {
-			return "Answer: " + expense  + " * " + strconv.Itoa(complement) + " = " + strconv.Itoa(i * complement)
+			return i * complement
 		}
 		m[i] = i
 	}
-	return "Not found"
+	panic("Not found")
 }
 
 // Part2 Part2 of puzzle
-func Part2(input string) string {
+func Part2(input string) int {
 	s := strings.Split(input, "\n")
 	m := make(map[int]int)
 	for _, expense1 := range s {
@@ -36,19 +36,19 @@ func Part2(input string) string {
 			complement := 2020 - i1 - i2
 			_, found := m[complement]
 			if found {
-				return "Answer: " + expense1 + " * " + expense2 + " * " + strconv.Itoa(complement) + " = "+ strconv.Itoa(i1*i2*complement)
+				return i1*i2*complement
 			}
 			m[i2] = i2
 		}
 		m[i1] = i1
 	}
-	return "Not found"
+	panic("Not found")
 }
 
 func main() {
-	file := utils.Input(2020,1)
+	input := utils.Input(2020,1)
 	start := time.Now()
-	fmt.Println("Part 1: " + Part1(file), "Time", time.Since(start))
+	fmt.Println("Part 1: " , Part1(input), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + Part2(file),"Time", time.Since(start))
+	fmt.Println("Part 2: " , Part2(input),"Time", time.Since(start))
 }

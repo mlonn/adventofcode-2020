@@ -11,7 +11,7 @@ import (
 
 
 // Part1 Part 1 of puzzle
-func Part1(input string) string {
+func Part1(input string) int {
 	acc := 0
 	var visited = make(map[int]bool)
 	lines := strings.Split(input, "\n")
@@ -39,7 +39,7 @@ func Part1(input string) string {
 		}
 	}
 
-	return strconv.Itoa(acc)
+	return acc
 }
 
 type Instruction struct {
@@ -48,7 +48,7 @@ type Instruction struct {
 }
 
 // Part2 Part2 of puzzle
-func Part2(input string) string {
+func Part2(input string) int {
 
 
 	lines := strings.Split(input, "\n")
@@ -91,11 +91,11 @@ func Part2(input string) string {
 			}
 		}
 		if terminated {
-			return strconv.Itoa(acc)
+			return acc
 		}
 		instructions[index] = instruction
 	}
-	return "Not found"
+	panic("Not found")
 }
 
 func main() {
@@ -105,7 +105,7 @@ func main() {
 	start = time.Now()
 	fmt.Println("Parse data: \t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: " + Part1(input), "\t", time.Since(start))
+	fmt.Println("Part 1: ", Part1(input), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + Part2(input),"\t", time.Since(start))
+	fmt.Println("Part 2: ", Part2(input),"\t", time.Since(start))
 }

@@ -58,21 +58,21 @@ func countBags(color string) int{
 }
 
 // Part1 Part 1 of puzzle
-func Part1() string {
+func Part1() int {
 	sum := 0
 	for _, bag := range bags {
 		if canContainGold(bag.color) && bag.color != "shiny gold" {
 			sum++
 		}
 	}
-	return strconv.Itoa(sum)
+	return sum
 }
 
 
 
 // Part2 Part2 of puzzle
-func Part2() string {
-	return strconv.Itoa(countBags("shiny gold"))
+func Part2() int {
+	return countBags("shiny gold")
 }
 
 func main() {
@@ -83,7 +83,7 @@ func main() {
 	parseBags(input)
 	fmt.Println("Parse data: \t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: " + Part1(), "\t", time.Since(start))
+	fmt.Println("Part 1: ", Part1(), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + Part2(),"\t", time.Since(start))
+	fmt.Println("Part 2: ", Part2(),"\t", time.Since(start))
 }

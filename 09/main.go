@@ -58,13 +58,13 @@ func Part2(input string, weakness int) int {
 	}
 	panic("Not found")
 }
-
+var weakness = 0
 func main() {
 	start := time.Now()
 	input := utils.Input(2020,9)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
-	weakness := Part1(input)
+	weakness = Part1(input)
 	fmt.Println("Part 1: " + strconv.Itoa(weakness), "\t", time.Since(start))
 	start = time.Now()
 	fmt.Println("Part 2: " + strconv.Itoa(Part2(input, weakness)),"\t", time.Since(start))

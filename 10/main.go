@@ -3,6 +3,7 @@ package main
 import (
 	"advent-of-code-2020/utils"
 	"fmt"
+	"path/filepath"
 	"sort"
 	"strconv"
 	"strings"
@@ -98,6 +99,7 @@ func Part2(input string) int {
 
 func main() {
 	start := time.Now()
+	fmt.Println(filepath.Base(""))
 	input := utils.Input(2020,10)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()

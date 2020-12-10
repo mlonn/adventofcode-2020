@@ -3,14 +3,13 @@ package main
 import (
 	"advent-of-code-2020/utils"
 	"fmt"
-	"strconv"
 	"strings"
 	"time"
 )
 
 
 // Part1 Part 1 of puzzle
-func Part1(input string) string {
+func Part1(input string) int {
 	sum := 0
 	groups := strings.Split(input,"\n\n")
 	for _, group := range groups {
@@ -24,11 +23,11 @@ func Part1(input string) string {
 		}
 		sum+= len(m)
 	}
-	return "Answer " + strconv.Itoa(sum)
+	return sum
 }
 
 // Part2 Part2 of puzzle
-func Part2(input string) string {
+func Part2(input string) int {
 
 	sum := 0
 	groups := strings.Split(input,"\n\n")
@@ -48,13 +47,13 @@ func Part2(input string) string {
 		}
 
 	}
-	return "Answer " + strconv.Itoa(sum)
+	return sum
 }
 
 func main() {
 	file := utils.Input(2020,6)
 	start := time.Now()
-	fmt.Println("Part 1: " + Part1(file), "Time", time.Since(start))
+	fmt.Println("Part 1: ", Part1(file), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + Part2(file),"Time", time.Since(start))
+	fmt.Println("Part 2: ", Part2(file),"Time", time.Since(start))
 }

@@ -12,9 +12,8 @@ import (
 // Input returns the input for the specified year and day as a string,
 // downloading it if it does not already exist on disk.
 func Input(year, day int) string {
-	os.Mkdir("./inputs", 0755)
-	filename := fmt.Sprintf("./inputs/%v.txt", day)
-	session, _ := ioutil.ReadFile("./session")
+	os.Mkdir("inputs", 0755)
+	filename := fmt.Sprintf("inputs/%v.txt", day)
 	if _, err := os.Stat(filename); err != nil {
 		est, err := time.LoadLocation("EST")
 		if err != nil {
@@ -28,7 +27,7 @@ func Input(year, day int) string {
 		req, _ := http.NewRequest(http.MethodGet, fmt.Sprintf("https://adventofcode.com/%v/day/%v/input", year, day), nil)
 		req.AddCookie(&http.Cookie{
 			Name:  "session",
-			Value: string(session),
+			Value: os.Getenv("AOC_SESSION"),
 		})
 		resp, err := http.DefaultClient.Do(req)
 		if err != nil {

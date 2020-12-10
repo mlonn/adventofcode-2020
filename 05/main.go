@@ -4,7 +4,6 @@ import (
 	"advent-of-code-2020/utils"
 	"fmt"
 	"sort"
-	"strconv"
 	"strings"
 	"time"
 )
@@ -50,7 +49,7 @@ func findSeat(inputs string, lower int,upper int)  int {
 }
 
 // Part1 Part 1 of puzzle
-func Part1(input string) string {
+func Part1(input string) int {
 	max:= 0
 	boardingPasses := strings.Split(input,"\n")
 	for _, boardingPass := range boardingPasses {
@@ -60,11 +59,11 @@ func Part1(input string) string {
 			max = id
 		}
 	}
-	return "Answer " + strconv.Itoa(max)
+	return max
 }
 
 // Part2 Part2 of puzzle
-func Part2(input string) string {
+func Part2(input string) int {
 
 
 	boardingPasses := strings.Split(input,"\n")
@@ -78,18 +77,18 @@ func Part2(input string) string {
 	for i, id := range ids {
 		if i < len(ids) -1 {
 			if  ids[i+1] - id  > 1{
-				return "Answer " + strconv.Itoa((ids[i+1]+id)/2)
+				return (ids[i+1]+id)/2
 			}
 		}
 
 	}
-	return "Not found"
+	panic("Not found")
 }
 
 func main() {
 	file := utils.Input(2020,5)
 	start := time.Now()
-	fmt.Println("Part 1: " + Part1(file), "Time", time.Since(start))
+	fmt.Println("Part 1: ", Part1(file), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + Part2(file),"Time", time.Since(start))
+	fmt.Println("Part 2: ", Part2(file),"Time", time.Since(start))
 }
