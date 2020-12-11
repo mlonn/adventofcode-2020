@@ -9,9 +9,8 @@ import (
 func BenchmarkPart1(b *testing.B) {
 	input := utils.ReadInput("../inputs/7.txt")
 	solution := 302
-	parseBags(input)
 	for n := 0; n < b.N; n++ {
-		answer := Part1()
+		answer := Part1(input)
 		if answer != solution {
 			b.Fatalf("answer = %q; solution %q", answer, solution)
 		}
@@ -21,9 +20,8 @@ func BenchmarkPart1(b *testing.B) {
 func BenchmarkPart2(b *testing.B) {
 	input := utils.ReadInput("../inputs/7.txt")
 	solution := 4165
-	parseBags(input)
 	for n := 0; n < b.N; n++ {
-		answer := Part2()
+		answer := Part2(input)
 		if answer != solution {
 			b.Fatalf("answer = %q; solution %q", answer, solution)
 		}

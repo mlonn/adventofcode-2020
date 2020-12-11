@@ -41,8 +41,9 @@ func Part1(input string) int {
 }
 
 // Part2 Part2 of puzzle
-func Part2(input string, weakness int) int {
+func Part2(input string) int {
 	lines := strings.Split(input, "\n")
+	weakness := Part1(input)
 	for i, _ := range lines {
 		sum :=0
 		list := make([]int,0)
@@ -58,14 +59,13 @@ func Part2(input string, weakness int) int {
 	}
 	panic("Not found")
 }
-var weakness = 0
+
 func main() {
 	start := time.Now()
 	input := utils.Input(2020,9)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
-	weakness = Part1(input)
-	fmt.Println("Part 1: " + strconv.Itoa(weakness), "\t", time.Since(start))
+	fmt.Println("Part 1: " + strconv.Itoa(Part1(input)), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + strconv.Itoa(Part2(input, weakness)),"\t", time.Since(start))
+	fmt.Println("Part 2: " + strconv.Itoa(Part2(input)),"\t", time.Since(start))
 }

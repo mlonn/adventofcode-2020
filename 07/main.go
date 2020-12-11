@@ -14,9 +14,10 @@ type Bag struct {
 	count int
 	bags []Bag
 }
-var bags = make(map[string]Bag)
 
-func parseBags(input string) {
+
+func parseBags(input string) map[string]Bag{
+	bags := make(map[string]Bag)
 	bagRegex, _ := regexp.Compile("(\\d+) (.*) bags?")
 	for _, bagString := range strings.Split(input, "\n") {
 		split := strings.Split(bagString, " bags contain")
@@ -33,35 +34,37 @@ func parseBags(input string) {
 		}
 		bags[bag.color] = bag
 	}
+	return bags
 }
 
-func canContainGold(color string) bool{
+func canContainGold(color string, bags map[string]Bag) bool{
 	if color == "shiny gold" {
 		return true
 	}
 	for _, containedBag := range bags[color].bags {
-		if canContainGold(containedBag.color){
+		if canContainGold(containedBag.color, bags){
 			return true
 		}
 	}
 	return false
 }
 
-func countBags(color string) int{
+func countBags(color string, bags map[string]Bag) int{
 	count := 0
 	bag := bags[color]
 	for _, containedBag := range bag.bags {
-		subCount := countBags(containedBag.color)
+		subCount := countBags(containedBag.color, bags)
 		count += containedBag.count + containedBag.count * subCount
 	}
 	return count
 }
 
 // Part1 Part 1 of puzzle
-func Part1() int {
+func Part1(input string) int {
+	bags :=parseBags(input)
 	sum := 0
 	for _, bag := range bags {
-		if canContainGold(bag.color) && bag.color != "shiny gold" {
+		if canContainGold(bag.color, bags) && bag.color != "shiny gold" {
 			sum++
 		}
 	}
@@ -71,8 +74,9 @@ func Part1() int {
 
 
 // Part2 Part2 of puzzle
-func Part2() int {
-	return countBags("shiny gold")
+func Part2(input string) int {
+	bags := parseBags(input)
+	return countBags("shiny gold", bags)
 }
 
 func main() {
@@ -80,10 +84,7 @@ func main() {
 	input := utils.Input(2020,7)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
-	parseBags(input)
-	fmt.Println("Parse data: \t", time.Since(start))
+	fmt.Println("Part 1: ", Part1(input), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: ", Part1(), "\t", time.Since(start))
-	start = time.Now()
-	fmt.Println("Part 2: ", Part2(),"\t", time.Since(start))
+	fmt.Println("Part 2: ", Part2(input),"\t", time.Since(start))
 }

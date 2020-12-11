@@ -20,10 +20,9 @@ func BenchmarkPart1(b *testing.B) {
 
 func BenchmarkPart2(b *testing.B) {
 	input := utils.ReadInput("../inputs/9.txt")
-	weakness = Part1(input)
 	solution := 13935797
 	for n := 0; n < b.N; n++ {
-		answer := Part2(input, weakness)
+		answer := Part2(input)
 		if answer != solution {
 			b.Fatalf("answer = %q; solution %q", answer, solution)
 		}
