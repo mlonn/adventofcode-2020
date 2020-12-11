@@ -103,8 +103,7 @@ func main() {
 	input := utils.Input(2020,10)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
-	weakness := Part1(input)
-	fmt.Println("Part 1: " + strconv.Itoa(weakness), "\t", time.Since(start))
+	fmt.Println("Part 1: " + strconv.Itoa(Part1(input)), "\t", time.Since(start))
 	start = time.Now()
 	fmt.Println("Part 2: " + strconv.Itoa(Part2(input)),"\t", time.Since(start))
 }
