@@ -144,25 +144,24 @@ func (grid Grid) GetOccupied() int{
 
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
-	grid := parseGrid(input)
-	grid2 := parseGrid(input)
-
+	current := parseGrid(input)
+	next := parseGrid(input)
 	unstable := true
 	step := 0
 	for unstable {
-		for y, row := range grid.g {
+		for y, row := range current.g {
 			for x, _ := range row {
-				grid2.g[y][x] = grid.NextPart1(x, y)
+				next.g[y][x] = current.NextPart1(x, y)
 			}
 		}
-		if grid.GetOccupied() == grid2.GetOccupied(){
+		if current.GetOccupied() == next.GetOccupied(){
 			unstable = false
 		}
-		grid, grid2 = grid2, grid
+		current, next = next, current
 		step ++
 	}
 	fmt.Println("Steps: ", step)
-	return grid.GetOccupied()
+	return current.GetOccupied()
 	panic("Not found")
 }
 
