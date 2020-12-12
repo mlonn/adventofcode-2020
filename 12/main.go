@@ -20,15 +20,12 @@ const (
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
 	lines := strings.Split(input,"\n")
-	EW := 0
-	NS := 0
+	x := 0
+	y := 0
 	direction := E
-
 	for _, line := range lines {
 		instruction := line[0]
 		magnitude, _ := strconv.Atoi(line[1:])
-
-
 		switch instruction {
 		case 'L':
 			direction =  (direction-magnitude+360)%360
@@ -37,48 +34,47 @@ func Part1(input string) int {
 			direction = (direction+magnitude)%360
 			break
 		case 'F':
-
 			switch direction {
 			case N:
-				NS += magnitude
+				y += magnitude
 				break
 			case W:
-				EW += magnitude
+				x += magnitude
 				break
 			case S:
-				NS -= magnitude
+				y -= magnitude
 				break
 			case E:
-				EW -= magnitude
+				x -= magnitude
 				break
 			}
 			break
 		case 'N':
-			NS += magnitude
+			y += magnitude
 			break
 		case 'W':
-			EW -= magnitude
+			x -= magnitude
 			break
 		case 'S':
-			NS -= magnitude
+			y -= magnitude
 			break
 		case 'E':
-			EW += magnitude
+			x += magnitude
 			break
-
 		}
 
 	}
-	return int(math.Abs(float64(NS)) + math.Abs(float64(EW)))
+	return int(math.Abs(float64(y)) + math.Abs(float64(x)))
 }
+
 
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 	lines := strings.Split(input,"\n")
-	EW := 0
-	NS := 0
-	WPEW := 10
-	WPNS := 1
+	x := 0
+	y := 0
+	wpx := 10
+	wpy := 1
 	for _, line := range lines {
 		instruction := line[0]
 		magnitude, _ := strconv.Atoi(line[1:])
@@ -86,43 +82,43 @@ func Part2(input string) int {
 		case 'L':
 			switch magnitude {
 			case 90:
-				WPEW, WPNS = -WPNS, WPEW
+				wpx, wpy = -wpy, wpx
 			case 180:
-				WPEW, WPNS = -WPEW, -WPNS
+				wpx, wpy = -wpx, -wpy
 			case 270:
-				WPEW, WPNS = WPNS, -WPEW
+				wpx, wpy = wpy, -wpx
 			}
 			break
 		case 'R':
 			switch magnitude {
 			case 90:
-				WPEW, WPNS = WPNS, -WPEW
+				wpx, wpy = wpy, -wpx
 			case 180:
-				WPEW, WPNS = -WPEW, -WPNS
+				wpx, wpy = -wpx, -wpy
 			case 270:
-				WPEW, WPNS = -WPNS, WPEW
+				wpx, wpy = -wpy, wpx
 				break
 			}
 		case 'F':
-			EW += magnitude * WPEW
-			NS += magnitude * WPNS
+			x += magnitude * wpx
+			y += magnitude * wpy
 			break
 		case 'N':
-			WPNS += magnitude
+			wpy += magnitude
 			break
 		case 'W':
-			WPEW -= magnitude
+			wpx -= magnitude
 			break
 		case 'S':
-			WPNS -= magnitude
+			wpy -= magnitude
 			break
 		case 'E':
-			WPEW += magnitude
+			wpx += magnitude
 			break
 		}
 
 	}
-	return int(math.Abs(float64(NS)) + math.Abs(float64(EW)))
+	return int(math.Abs(float64(y)) + math.Abs(float64(x)))
 }
 
 func main() {
