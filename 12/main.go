@@ -80,25 +80,19 @@ func Part2(input string) int {
 		magnitude, _ := strconv.Atoi(line[1:])
 		switch instruction {
 		case 'L':
-			switch magnitude {
-			case 90:
+			turn:= 0
+			for turn < (magnitude/90) {
 				wpx, wpy = -wpy, wpx
-			case 180:
-				wpx, wpy = -wpx, -wpy
-			case 270:
-				wpx, wpy = wpy, -wpx
+				turn++
 			}
 			break
 		case 'R':
-			switch magnitude {
-			case 90:
+			turn:= 0
+			for turn < (magnitude/90) {
 				wpx, wpy = wpy, -wpx
-			case 180:
-				wpx, wpy = -wpx, -wpy
-			case 270:
-				wpx, wpy = -wpy, wpx
-				break
+				turn++
 			}
+			break
 		case 'F':
 			x += magnitude * wpx
 			y += magnitude * wpy
