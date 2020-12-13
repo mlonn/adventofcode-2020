@@ -1,0 +1,2391 @@
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   63997	     18898 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    3465	    332223 ns/op
+PASS
+ok  	advent-of-code-2020/01	2.947s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    2036	    565105 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2336	    563979 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.821s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   68342	     18031 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   21538	     50849 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.311s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1934	    594378 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     258	   5088954 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.232s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    7080	    203097 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2947	    357631 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.812s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     786	   1585418 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     630	   2166121 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.221s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     192	   6266741 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  273516	      6176 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.822s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	   12247	    105064 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      90	  13014914 ns/op
+PASS
+ok  	advent-of-code-2020/08	3.706s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      90	  12392187 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      86	  14368593 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.179s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   72040	     17284 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    124469 ns/op
+PASS
+ok  	advent-of-code-2020/10	2.941s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      12	 204007910 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       3	 522702594 ns/op
+PASS
+ok  	advent-of-code-2020/11	5.952s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   44583	     27949 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2284	    691307 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.407s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1274	   1021399 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1227	   1130844 ns/op
+PASS
+ok  	advent-of-code-2020/02	3.139s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   41287	     30138 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   14235	     90071 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.930s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     855	   1195124 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  13005764 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.744s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4456	    261707 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2258	    602304 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.875s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     486	   2786621 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     399	   3850230 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.858s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      70	  16326169 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  150105	      8620 ns/op
+PASS
+ok  	advent-of-code-2020/07	2.832s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    6776	    195738 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      57	  23912481 ns/op
+PASS
+ok  	advent-of-code-2020/08	4.084s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      54	  32121954 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      54	  24203990 ns/op
+PASS
+ok  	advent-of-code-2020/09	4.976s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   44077	     30721 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    9318	    148447 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.395s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       9	 177796966 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 289692908 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.434s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   39106	     31834 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2626	    570471 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.472s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1088	   1071739 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     943	   1239111 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.863s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   38588	     31746 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   12909	     86876 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.876s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     901	   1140353 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     123	   9631621 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.644s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4764	    264155 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2343	    511083 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.816s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     510	   2266768 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     439	   2717002 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.144s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     105	   9873047 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  196281	      7517 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.741s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    9056	    140133 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      86	  15929979 ns/op
+PASS
+ok  	advent-of-code-2020/08	3.660s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      73	  14114814 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      72	  15214194 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.089s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   72840	     15143 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   16416	     75218 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.445s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      12	 103951417 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       5	 216888842 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.834s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   48164	     24441 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2665	    441343 ns/op
+PASS
+ok  	advent-of-code-2020/01	2.894s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1288	    843921 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1484	    889901 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.821s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   45300	     29782 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   14444	     83942 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.900s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1058	   1172733 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  10104706 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.643s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4659	    279703 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2316	    507325 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.863s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     571	   2430012 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     404	   3391627 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.531s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     115	  12688899 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  152191	      8635 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.963s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    6987	    164696 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      56	  20726979 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.679s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      60	  22604413 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      50	  22189558 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.522s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   46825	     25864 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    116217 ns/op
+PASS
+ok  	advent-of-code-2020/10	2.955s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       9	 149903325 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 276346098 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.186s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   40728	     28951 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2572	    662027 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.610s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1171	   1086742 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1210	   1010631 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.982s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   37636	     31306 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   12129	     83741 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.783s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     820	   1292222 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     127	   9721038 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.683s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    3909	    270760 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2400	    551824 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.769s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     415	   3945404 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     331	   3907907 ns/op
+PASS
+ok  	advent-of-code-2020/06	4.885s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      67	  30996769 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   67558	     16147 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.741s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    5919	    244548 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      43	  26695742 ns/op
+PASS
+ok  	advent-of-code-2020/08	3.826s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      57	  28811476 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      49	  25378493 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.676s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   33390	     38509 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    124395 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.404s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       9	 177317364 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       2	 544439055 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.824s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   33097	     32263 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2235	    609497 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.205s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	     778	   1404679 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     796	   1421669 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.890s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   34148	     41195 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    109230 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.239s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     985	   1372425 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  10842836 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.899s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4056	    287591 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1749	    593972 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.588s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     506	   2714061 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     322	   3286854 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.411s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     108	  11747482 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  162177	      7218 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.584s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    7954	    140180 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      58	  19483917 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.527s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      69	  19404183 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      64	  18166246 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.394s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   52812	     21516 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   13036	     86971 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.707s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      13	  79621701 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       6	 192611763 ns/op
+PASS
+ok  	advent-of-code-2020/11	2.754s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   46182	     23899 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    3244	    351013 ns/op
+PASS
+ok  	advent-of-code-2020/01	2.779s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1616	    682438 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1920	    661686 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.716s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   56564	     24335 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   20740	     55354 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.513s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1711	    707745 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     202	   5718878 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.197s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    5914	    182851 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2755	    387780 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.390s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     764	   1515820 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     612	   2194667 ns/op
+PASS
+ok  	advent-of-code-2020/06	4.024s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     168	   6974704 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  276370	      4540 ns/op
+PASS
+ok  	advent-of-code-2020/07	4.257s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    9541	    105268 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      97	  11868758 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.384s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	     100	  11106546 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      80	  13584766 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.003s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   76670	     15380 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   17082	     65538 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.359s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      18	  75756510 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       6	 209649562 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.809s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   47149	     25888 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2390	    439310 ns/op
+PASS
+ok  	advent-of-code-2020/01	2.802s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1172	   1083739 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1302	    825258 ns/op
+PASS
+ok  	advent-of-code-2020/02	3.724s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   48513	     23696 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   16712	     79137 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.685s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1423	    962246 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     148	   9341906 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.871s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4242	    241762 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2592	    509365 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.675s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     597	   1927253 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     508	   2560232 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.154s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     128	   8914827 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  200670	      6153 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.401s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    7188	    157984 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      82	  19249574 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.988s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      55	  34442044 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      49	  22570424 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.686s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   45184	     23948 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    125686 ns/op
+PASS
+ok  	advent-of-code-2020/10	2.928s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      10	 163266102 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 328705738 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.555s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   38452	     32677 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1818	    573532 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.097s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1076	    992734 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1214	   1163377 ns/op
+PASS
+ok  	advent-of-code-2020/02	3.059s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   36747	     34092 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   12096	     99640 ns/op
+PASS
+ok  	advent-of-code-2020/03	4.198s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     930	   1271780 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     124	   9473609 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.794s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4680	    276226 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1797	    640749 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.858s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     416	   2776801 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     342	   3777754 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.420s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      70	  15190437 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  158727	     10616 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.187s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    5596	    223714 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      32	  34956983 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.769s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      66	  33707925 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      54	  22221072 ns/op
+PASS
+ok  	advent-of-code-2020/09	4.411s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   36550	     30798 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    121506 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.112s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       9	 127867533 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 328232934 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.279s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   36920	     32630 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2076	    579082 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.233s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1074	   1223826 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1046	   1227532 ns/op
+PASS
+ok  	advent-of-code-2020/02	3.127s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   37504	     34740 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    106964 ns/op
+PASS
+ok  	advent-of-code-2020/03	2.985s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     968	   1275234 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  10856610 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.769s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4108	    318593 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1790	    902728 ns/op
+PASS
+ok  	advent-of-code-2020/05	3.343s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     367	   2972560 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     331	   3532170 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.367s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      90	  11178780 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  161804	      9069 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.782s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    6318	    161746 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      61	  20235485 ns/op
+PASS
+ok  	advent-of-code-2020/08	3.399s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      62	  23109832 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      50	  24961656 ns/op
+PASS
+ok  	advent-of-code-2020/09	4.704s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   48237	     27179 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    128553 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.129s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       7	 160772065 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       3	 336067653 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.537s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   40426	     28456 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2380	    511050 ns/op
+PASS
+ok  	advent-of-code-2020/01	2.978s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1034	   1141879 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1164	   1049957 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.930s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   32554	     41333 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    108242 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.054s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1057	   1213864 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  10061483 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.695s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4923	    259182 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2280	    526703 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.818s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     556	   2457214 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     355	   3046945 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.289s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      99	  11779130 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  174243	      8550 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.979s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    7612	    155652 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      67	  20234684 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.851s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      57	  21745215 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      49	  24366983 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.057s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   46092	     42364 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    7730	    213594 ns/op
+PASS
+ok  	advent-of-code-2020/10	5.200s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       9	 179597468 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 368139003 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.752s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   37244	     35912 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1518	    691614 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.095s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1009	   1342604 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1135	   1076130 ns/op
+PASS
+ok  	advent-of-code-2020/02	3.220s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   36266	     34426 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   12316	    101844 ns/op
+PASS
+ok  	advent-of-code-2020/03	4.147s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     936	   1269165 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     115	  11299666 ns/op
+PASS
+ok  	advent-of-code-2020/04	4.390s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4509	    301862 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1788	    705642 ns/op
+PASS
+ok  	advent-of-code-2020/05	3.030s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     458	   2366780 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     402	   3205809 ns/op
+PASS
+ok  	advent-of-code-2020/06	4.208s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      87	  15780772 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  137365	     10189 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.807s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    7868	    184993 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      48	  26372161 ns/op
+PASS
+ok  	advent-of-code-2020/08	3.041s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      57	  27681307 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      52	  22943826 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.702s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   43584	     34132 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    152397 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.604s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       6	 167127078 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 309975119 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.743s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   36536	     29491 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2196	    605437 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.185s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1022	   1162304 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     979	   1119088 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.896s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   30000	     35830 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    106892 ns/op
+PASS
+ok  	advent-of-code-2020/03	2.887s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     967	   1257983 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  11229198 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.840s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4592	    311621 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1898	    662916 ns/op
+PASS
+ok  	advent-of-code-2020/05	3.042s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     534	   2326465 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     368	   3494817 ns/op
+PASS
+ok  	advent-of-code-2020/06	4.381s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      79	  13356478 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  171000	      6771 ns/op
+PASS
+ok  	advent-of-code-2020/07	2.601s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    7899	    154487 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      52	  20241561 ns/op
+PASS
+ok  	advent-of-code-2020/08	3.591s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      62	  25928294 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      55	  20776973 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.799s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   49980	     24072 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    9834	    111228 ns/op
+PASS
+ok  	advent-of-code-2020/10	2.910s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      10	 104393308 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 250345210 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.506s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   39644	     29114 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2394	    578066 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.206s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1054	   1043404 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1280	    957405 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.780s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   39862	     28960 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   12696	     97834 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.908s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1232	   1166088 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     138	   9147592 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.991s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    5403	    264298 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2511	    571443 ns/op
+PASS
+ok  	advent-of-code-2020/05	3.252s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     464	   2423976 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     343	   3063740 ns/op
+PASS
+ok  	advent-of-code-2020/06	4.119s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     120	  15625734 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  162566	      8631 ns/op
+PASS
+ok  	advent-of-code-2020/07	4.412s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    7753	    141822 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      73	  19048629 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.784s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      68	  17967643 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      67	  18003996 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.363s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   59096	     23499 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    110972 ns/op
+PASS
+ok  	advent-of-code-2020/10	2.944s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      10	 107663148 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 277306524 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.692s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   36019	     30140 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2342	    528601 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.125s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1197	   1087181 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1111	   1112789 ns/op
+PASS
+ok  	advent-of-code-2020/02	3.014s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   33044	     33615 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   12126	    123121 ns/op
+PASS
+ok  	advent-of-code-2020/03	4.241s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     925	   1287592 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     120	   9552874 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.741s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4010	    280535 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2254	    604386 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.855s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     484	   2644287 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     330	   3189575 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.227s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     104	  13560829 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  145237	     10890 ns/op
+PASS
+ok  	advent-of-code-2020/07	4.030s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    7818	    158117 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      67	  20785121 ns/op
+PASS
+ok  	advent-of-code-2020/08	3.937s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      58	  20474630 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      56	  20724634 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.357s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   48736	     27216 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    107280 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.003s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       9	 145658609 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 330449254 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.926s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   38600	     31353 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2116	    633495 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.198s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1204	   1116333 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1206	   1059163 ns/op
+PASS
+ok  	advent-of-code-2020/02	3.146s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   41233	     35300 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    118221 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.223s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     999	   1486900 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  10739709 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.969s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4449	    256611 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2265	    530472 ns/op
+PASS
+ok  	advent-of-code-2020/05	3.546s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     592	   2359163 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     384	   3212601 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.416s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     111	  12676810 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  181418	      6881 ns/op
+PASS
+ok  	advent-of-code-2020/07	4.624s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    8764	    146959 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      78	  18346910 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.978s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      61	  17391855 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      64	  18139292 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.864s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   53174	     23916 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    122459 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.092s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       7	 220399633 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 369244818 ns/op
+PASS
+ok  	advent-of-code-2020/11	5.530s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   36496	     29539 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1916	    522801 ns/op
+PASS
+ok  	advent-of-code-2020/01	2.810s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1032	   1148010 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     915	   1203213 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.983s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   33086	     37235 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    133808 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.292s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	     842	   1643051 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  11023025 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.044s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4268	    285378 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2190	    605145 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.956s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     436	   2621677 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     362	   3351064 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.298s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      80	  18950504 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  146782	     10226 ns/op
+PASS
+ok  	advent-of-code-2020/07	4.282s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    6692	    194674 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      40	  28023549 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.960s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      61	  25149829 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      48	  27888602 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.893s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   48854	     28484 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    9862	    141706 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.483s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	       9	 129508395 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 376829318 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.526s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   41444	     35379 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1890	    687691 ns/op
+PASS
+ok  	advent-of-code-2020/01	4.467s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1077	   1196151 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1017	   1031867 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.841s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   33428	     35759 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    106570 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.024s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1048	   1216764 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     100	  10923464 ns/op
+PASS
+ok  	advent-of-code-2020/04	2.777s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4477	    311296 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2376	    597577 ns/op
+PASS
+ok  	advent-of-code-2020/05	3.214s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     526	   2256190 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     381	   2808346 ns/op
+PASS
+ok  	advent-of-code-2020/06	3.514s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	      78	  16057123 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  142314	      8191 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.066s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    6957	    158194 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      62	  17746090 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.519s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      84	  16353019 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      61	  18211193 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.417s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   61393	     20364 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   12298	     99523 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.909s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      12	  96160727 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       5	 256228911 ns/op
+PASS
+ok  	advent-of-code-2020/11	3.968s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   42760	     38877 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2253	    619178 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.648s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1173	    969964 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1214	   1047059 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.876s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   31051	     32412 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    114022 ns/op
+PASS
+ok  	advent-of-code-2020/03	2.819s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1018	   1269218 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     165	   8552053 ns/op
+PASS
+ok  	advent-of-code-2020/04	5.787s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    4417	    299129 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2470	    510952 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.912s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     556	   2291679 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     475	   2656831 ns/op
+PASS
+ok  	advent-of-code-2020/06	7.144s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     139	   8271408 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  179274	      5816 ns/op
+PASS
+ok  	advent-of-code-2020/07	3.255s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    9417	    114131 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      84	  17378034 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.784s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      55	  19678319 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      52	  21991710 ns/op
+PASS
+ok  	advent-of-code-2020/09	3.200s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   50328	     22891 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   10000	    108131 ns/op
+PASS
+ok  	advent-of-code-2020/10	2.768s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      10	 112676654 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 260246727 ns/op
+PASS
+ok  	advent-of-code-2020/11	4.461s
+?   	advent-of-code-2020/utils	[no test files]
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/01
+BenchmarkPart1
+BenchmarkPart1-12    	   42514	     27278 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2841	    455862 ns/op
+PASS
+ok  	advent-of-code-2020/01	3.084s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/02
+BenchmarkPart1
+BenchmarkPart1-12    	    1332	    854234 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    1480	    794171 ns/op
+PASS
+ok  	advent-of-code-2020/02	2.706s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/03
+BenchmarkPart1
+BenchmarkPart1-12    	   46924	     25298 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   16864	     73877 ns/op
+PASS
+ok  	advent-of-code-2020/03	3.631s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/04
+BenchmarkPart1
+BenchmarkPart1-12    	    1280	    927373 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     157	   6732032 ns/op
+PASS
+ok  	advent-of-code-2020/04	3.326s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/05
+BenchmarkPart1
+BenchmarkPart1-12    	    5562	    196229 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	    2791	    428586 ns/op
+PASS
+ok  	advent-of-code-2020/05	2.559s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/06
+BenchmarkPart1
+BenchmarkPart1-12    	     668	   1707438 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	     562	   2124998 ns/op
+PASS
+ok  	advent-of-code-2020/06	2.935s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/07
+BenchmarkPart1
+BenchmarkPart1-12    	     150	   8109145 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	  248532	      5392 ns/op
+PASS
+ok  	advent-of-code-2020/07	4.573s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/08
+BenchmarkPart1
+BenchmarkPart1-12    	    9882	    116983 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      93	  13819237 ns/op
+PASS
+ok  	advent-of-code-2020/08	2.675s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/09
+BenchmarkPart1
+BenchmarkPart1-12    	      87	  13084266 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	      81	  14331073 ns/op
+PASS
+ok  	advent-of-code-2020/09	4.119s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/10
+BenchmarkPart1
+BenchmarkPart1-12    	   65775	     17309 ns/op
+BenchmarkPart2
+BenchmarkPart2-12    	   14562	     87602 ns/op
+PASS
+ok  	advent-of-code-2020/10	3.633s
+goos: darwin
+goarch: amd64
+pkg: advent-of-code-2020/11
+BenchmarkPart1
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+Steps:  71
+BenchmarkPart1-12    	      14	  83528184 ns/op
+BenchmarkPart2
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+Steps:  90
+BenchmarkPart2-12    	       4	 261565481 ns/op
+PASS
+ok  	advent-of-code-2020/11	2.728s
+?   	advent-of-code-2020/utils	[no test files]
