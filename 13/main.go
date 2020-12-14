@@ -9,37 +9,37 @@ import (
 	"time"
 )
 
-func parseInput(input string) (int, map[int]int, int) {
+type Bus struct {
+	index, interval int
+}
+
+func parseInput(input string) (int, []Bus) {
 	lines := strings.Split(input, "\n")
 	timestamp, _ := strconv.Atoi(lines[0])
-	busses := make(map[int]int, 0)
-	maxBus := 0
+	busses := make([]Bus, 0)
 	for i, bus := range strings.Split(lines[1], ",") {
 		if bus == "x" {
 			continue
 		}
 		busNumber, _ := strconv.Atoi(bus)
-		if busNumber > maxBus {
-			maxBus = busNumber
-		}
-		busses[busNumber] = i
+		busses = append(busses, Bus{index: i, interval: busNumber})
 	}
-	return timestamp, busses, maxBus
+	return timestamp, busses
 }
 
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
-	timestamp, busses, _ := parseInput(input)
+	timestamp, busses := parseInput(input)
 	minWait := math.MaxInt32
 	minBus := 0
-	for bus := range busses {
+	for _, bus := range busses {
 		wait := 0
-		for i := 0; i <= timestamp/bus; i++ {
-			wait += bus
+		for i := 0; i <= timestamp/bus.interval; i++ {
+			wait += bus.interval
 		}
 		if wait < minWait {
 			minWait = wait
-			minBus = bus
+			minBus = bus.interval
 		}
 	}
 	return (minWait - timestamp) * minBus
@@ -47,20 +47,27 @@ func Part1(input string) int {
 
 // Part2 Part2 of puzzle
 func Part2(input string) int {
-	_, busses, maxBus := parseInput(input)
-	found := false
-
-	t := 0
-	for !found {
-		t += maxBus
-		works := true
-		for bus := range busses {
-			t0 := t - busses[maxBus]
-			if (t0+busses[bus])%bus != 0 {
-				works = false
-			}
+	_, busses := parseInput(input)
+	var alignedBusses []Bus
+	for _, bus := range busses {
+		start := (bus.interval - bus.index) % bus.interval
+		if start < 0 {
+			start += bus.interval
 		}
-		found = works
+		alignedBusses = append(alignedBusses, Bus{
+			index:    start,
+			interval: bus.interval,
+		})
+	}
+	fmt.Println(busses)
+	fmt.Println(alignedBusses)
+	step := 1
+	t := 0
+	for _, bus := range alignedBusses {
+		for t%bus.interval != bus.index {
+			t += step
+		}
+		step *= bus.interval
 	}
 	return t
 }

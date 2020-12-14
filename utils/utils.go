@@ -53,4 +53,3 @@ func ReadInput(filename string) string {
 	}
 	return string(bytes.TrimSpace(data))
 }
-

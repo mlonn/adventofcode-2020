@@ -6,8 +6,8 @@ import (
 )
 
 func BenchmarkPart1(b *testing.B) {
-	input := utils.ReadInput("../inputs/11.txt")
-	solution := 2406
+	input := utils.ReadInput("../inputs/12.txt")
+	solution := 854
 	for n := 0; n < b.N; n++ {
 		answer := Part1(input)
 		if answer != solution {
@@ -17,8 +17,8 @@ func BenchmarkPart1(b *testing.B) {
 }
 
 func BenchmarkPart2(b *testing.B) {
-	input := utils.ReadInput("../inputs/11.txt")
-	solution := 2149
+	input := utils.ReadInput("../inputs/12.txt")
+	solution := 54404
 	for n := 0; n < b.N; n++ {
 		answer := Part2(input)
 		if answer != solution {

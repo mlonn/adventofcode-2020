@@ -5,8 +5,6 @@ import (
 	"testing"
 )
 
-
-
 func BenchmarkPart1(b *testing.B) {
 	input := utils.ReadInput("../inputs/9.txt")
 	solution := 104054607
