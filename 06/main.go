@@ -7,13 +7,12 @@ import (
 	"time"
 )
 
-
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
 	sum := 0
-	groups := strings.Split(input,"\n\n")
+	groups := strings.Split(input, "\n\n")
 	for _, group := range groups {
-		answers := strings.Split(group,"\n")
+		answers := strings.Split(group, "\n")
 		m := make(map[int32]bool)
 		for _, answer := range answers {
 			for _, question := range answer {
@@ -21,7 +20,7 @@ func Part1(input string) int {
 			}
 
 		}
-		sum+= len(m)
+		sum += len(m)
 	}
 	return sum
 }
@@ -30,9 +29,9 @@ func Part1(input string) int {
 func Part2(input string) int {
 
 	sum := 0
-	groups := strings.Split(input,"\n\n")
+	groups := strings.Split(input, "\n\n")
 	for _, group := range groups {
-		answers := strings.Split(group,"\n")
+		answers := strings.Split(group, "\n")
 		m := make(map[int32]int)
 		for _, answer := range answers {
 			for _, question := range answer {
@@ -51,9 +50,9 @@ func Part2(input string) int {
 }
 
 func main() {
-	file := utils.Input(2020,6)
+	file := utils.Input(2020, 6)
 	start := time.Now()
 	fmt.Println("Part 1: ", Part1(file), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: ", Part2(file),"Time", time.Since(start))
+	fmt.Println("Part 2: ", Part2(file), "Time", time.Since(start))
 }

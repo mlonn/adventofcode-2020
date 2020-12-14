@@ -9,17 +9,18 @@ import (
 	"time"
 )
 
-
 type Instruction int
+
 const (
 	N = 0
 	E = 90
 	S = 180
 	W = 270
 )
+
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
-	lines := strings.Split(input,"\n")
+	lines := strings.Split(input, "\n")
 	x := 0
 	y := 0
 	direction := E
@@ -28,10 +29,10 @@ func Part1(input string) int {
 		magnitude, _ := strconv.Atoi(line[1:])
 		switch instruction {
 		case 'L':
-			direction =  (direction-magnitude+360)%360
+			direction = (direction - magnitude + 360) % 360
 			break
 		case 'R':
-			direction = (direction+magnitude)%360
+			direction = (direction + magnitude) % 360
 			break
 		case 'F':
 			switch direction {
@@ -67,10 +68,9 @@ func Part1(input string) int {
 	return int(math.Abs(float64(y)) + math.Abs(float64(x)))
 }
 
-
 // Part2 Part2 of puzzle
 func Part2(input string) int {
-	lines := strings.Split(input,"\n")
+	lines := strings.Split(input, "\n")
 	x := 0
 	y := 0
 	wpx := 10
@@ -80,15 +80,15 @@ func Part2(input string) int {
 		magnitude, _ := strconv.Atoi(line[1:])
 		switch instruction {
 		case 'L':
-			turn:= 0
-			for turn < (magnitude/90) {
+			turn := 0
+			for turn < (magnitude / 90) {
 				wpx, wpy = -wpy, wpx
 				turn++
 			}
 			break
 		case 'R':
-			turn:= 0
-			for turn < (magnitude/90) {
+			turn := 0
+			for turn < (magnitude / 90) {
 				wpx, wpy = wpy, -wpx
 				turn++
 			}
@@ -117,10 +117,10 @@ func Part2(input string) int {
 
 func main() {
 	start := time.Now()
-	input := utils.Input(2020,12)
+	input := utils.Input(2020, 12)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: " + strconv.Itoa(Part1(input)), "\t", time.Since(start))
+	fmt.Println("Part 1: "+strconv.Itoa(Part1(input)), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + strconv.Itoa(Part2(input)),"\t", time.Since(start))
+	fmt.Println("Part 2: "+strconv.Itoa(Part2(input)), "\t", time.Since(start))
 }

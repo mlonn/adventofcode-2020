@@ -8,9 +8,7 @@ import (
 	"time"
 )
 
-
-
-func findRow(inputs string, lower int,upper int)  int {
+func findRow(inputs string, lower int, upper int) int {
 	if upper == lower {
 		return upper
 	}
@@ -29,7 +27,7 @@ func findRow(inputs string, lower int,upper int)  int {
 	return upper
 }
 
-func findSeat(inputs string, lower int,upper int)  int {
+func findSeat(inputs string, lower int, upper int) int {
 	if upper == lower {
 		return upper
 	}
@@ -50,11 +48,11 @@ func findSeat(inputs string, lower int,upper int)  int {
 
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
-	max:= 0
-	boardingPasses := strings.Split(input,"\n")
+	max := 0
+	boardingPasses := strings.Split(input, "\n")
 	for _, boardingPass := range boardingPasses {
 		row, seat := boardingPass[0:7], boardingPass[7:]
-		id := findRow(row, 0,127) * 8 + findSeat(seat, 0,7)
+		id := findRow(row, 0, 127)*8 + findSeat(seat, 0, 7)
 		if id > max {
 			max = id
 		}
@@ -65,19 +63,18 @@ func Part1(input string) int {
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 
-
-	boardingPasses := strings.Split(input,"\n")
+	boardingPasses := strings.Split(input, "\n")
 	ids := make([]int, 0)
 	for _, boardingPass := range boardingPasses {
 		row, seat := boardingPass[0:7], boardingPass[7:]
-		id := findRow(row, 0,127) * 8 + findSeat(seat, 0,7)
-		ids = append(ids,id)
+		id := findRow(row, 0, 127)*8 + findSeat(seat, 0, 7)
+		ids = append(ids, id)
 	}
 	sort.Ints(ids)
 	for i, id := range ids {
-		if i < len(ids) -1 {
-			if  ids[i+1] - id  > 1{
-				return (ids[i+1]+id)/2
+		if i < len(ids)-1 {
+			if ids[i+1]-id > 1 {
+				return (ids[i+1] + id) / 2
 			}
 		}
 
@@ -86,9 +83,9 @@ func Part2(input string) int {
 }
 
 func main() {
-	file := utils.Input(2020,5)
+	file := utils.Input(2020, 5)
 	start := time.Now()
 	fmt.Println("Part 1: ", Part1(file), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: ", Part2(file),"Time", time.Since(start))
+	fmt.Println("Part 2: ", Part2(file), "Time", time.Since(start))
 }

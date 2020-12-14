@@ -9,8 +9,6 @@ import (
 	"time"
 )
 
-
-
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
 	size := 25
@@ -19,8 +17,8 @@ func Part1(input string) int {
 		if i < size {
 			continue
 		}
-		
-		preamble := lines[i-size :i]
+
+		preamble := lines[i-size : i]
 		current, _ := strconv.Atoi(line)
 		found := false
 
@@ -28,7 +26,7 @@ func Part1(input string) int {
 			for _, second := range preamble {
 				x, _ := strconv.Atoi(first)
 				y, _ := strconv.Atoi(second)
-				if x + y == current {
+				if x+y == current {
 					found = true
 				}
 			}
@@ -45,14 +43,14 @@ func Part2(input string) int {
 	lines := strings.Split(input, "\n")
 	weakness := Part1(input)
 	for i, _ := range lines {
-		sum :=0
-		list := make([]int,0)
-		for j := i;j < len(lines); j++ {
+		sum := 0
+		list := make([]int, 0)
+		for j := i; j < len(lines); j++ {
 			current, _ := strconv.Atoi(lines[j])
-			list = append(list,current)
+			list = append(list, current)
 			if sum == weakness {
 				sort.Ints(list)
-				return list[0]+list[len(list)-1]
+				return list[0] + list[len(list)-1]
 			}
 			sum += current
 		}
@@ -62,10 +60,10 @@ func Part2(input string) int {
 
 func main() {
 	start := time.Now()
-	input := utils.Input(2020,9)
+	input := utils.Input(2020, 9)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 1: " + strconv.Itoa(Part1(input)), "\t", time.Since(start))
+	fmt.Println("Part 1: "+strconv.Itoa(Part1(input)), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: " + strconv.Itoa(Part2(input)),"\t", time.Since(start))
+	fmt.Println("Part 2: "+strconv.Itoa(Part2(input)), "\t", time.Since(start))
 }

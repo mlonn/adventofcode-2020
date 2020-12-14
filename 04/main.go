@@ -9,19 +9,16 @@ import (
 	"time"
 )
 
-
-
-
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
 	passports := strings.Split(input, "\n\n")
-	valid:= 0
+	valid := 0
 	for _, passport := range passports {
-		clean := strings.ReplaceAll(passport,"\n", " ")
+		clean := strings.ReplaceAll(passport, "\n", " ")
 		passportFields := strings.Split(clean, " ")
 		fieldMap := make(map[string]string)
 		for _, field := range passportFields {
-			split := strings.Split(field,":")
+			split := strings.Split(field, ":")
 			if split[0] != "cid" {
 				fieldMap[split[0]] = split[1]
 			}
@@ -37,13 +34,13 @@ func Part1(input string) int {
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 	passports := strings.Split(input, "\n\n")
-	valid:= 0
+	valid := 0
 	for _, passport := range passports {
-		clean := strings.ReplaceAll(passport,"\n", " ")
+		clean := strings.ReplaceAll(passport, "\n", " ")
 		passportFields := strings.Split(clean, " ")
 		fieldMap := make(map[string]string)
 		for _, field := range passportFields {
-			split := strings.Split(field,":")
+			split := strings.Split(field, ":")
 			if split[0] != "cid" {
 				fieldMap[split[0]] = split[1]
 			}
@@ -64,31 +61,31 @@ func Part2(input string) int {
 			continue
 		}
 		hgt := fieldMap["hgt"]
-		in := strings.HasSuffix(hgt,"in")
-		cm := strings.HasSuffix(hgt,"cm")
-		if !cm && !in{
+		in := strings.HasSuffix(hgt, "in")
+		cm := strings.HasSuffix(hgt, "cm")
+		if !cm && !in {
 			continue
 		}
 		if cm {
-			cmI, _ := strconv.Atoi(strings.ReplaceAll(hgt,"cm",""))
+			cmI, _ := strconv.Atoi(strings.ReplaceAll(hgt, "cm", ""))
 			if cmI < 150 || cmI > 193 {
 				continue
 			}
 		}
 		if in {
-			inI, _ := strconv.Atoi(strings.ReplaceAll(hgt,"in",""))
+			inI, _ := strconv.Atoi(strings.ReplaceAll(hgt, "in", ""))
 			if inI < 59 || inI > 76 {
 				continue
 			}
 		}
 		hcl := fieldMap["hcl"]
 		match, _ := regexp.MatchString("^#[a-f0-9]{6}$", hcl)
-		if !match{
+		if !match {
 			continue
 		}
 		ecl := fieldMap["ecl"]
 		match, _ = regexp.MatchString("amb|blu|brn|gry|grn|hzl|oth$", ecl)
-		if !match{
+		if !match {
 			continue
 		}
 		pid := fieldMap["pid"]
@@ -102,9 +99,9 @@ func Part2(input string) int {
 }
 
 func main() {
-	file := utils.Input(2020,4)
+	file := utils.Input(2020, 4)
 	start := time.Now()
 	fmt.Println("Part 1: ", Part1(file), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: ", Part2(file),"Time", time.Since(start))
+	fmt.Println("Part 2: ", Part2(file), "Time", time.Since(start))
 }

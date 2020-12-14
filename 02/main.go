@@ -8,11 +8,10 @@ import (
 	"time"
 )
 
-
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
 	s := strings.Split(input, "\n")
-	total:= 0
+	total := 0
 	for _, line := range s {
 		split := strings.Split(line, ": ")
 		meta, pwd := split[0], split[1]
@@ -32,7 +31,7 @@ func Part1(input string) int {
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 	s := strings.Split(input, "\n")
-	total:= 0
+	total := 0
 	for _, line := range s {
 		split := strings.Split(line, ": ")
 		meta, pwd := split[0], split[1]
@@ -49,9 +48,9 @@ func Part2(input string) int {
 }
 
 func main() {
-	file := utils.Input(2020,2)
+	file := utils.Input(2020, 2)
 	start := time.Now()
 	fmt.Println("Part 1: ", Part1(file), "Time", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: ", Part2(file),"Time", time.Since(start))
+	fmt.Println("Part 2: ", Part2(file), "Time", time.Since(start))
 }

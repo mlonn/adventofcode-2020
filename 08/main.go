@@ -8,8 +8,6 @@ import (
 	"time"
 )
 
-
-
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
 	acc := 0
@@ -17,7 +15,7 @@ func Part1(input string) int {
 	lines := strings.Split(input, "\n")
 	i := 0
 	for i < len(lines) {
-		instructions := strings.Split(lines[i]," ")
+		instructions := strings.Split(lines[i], " ")
 		instruction, n := instructions[0], instructions[1]
 		number, _ := strconv.Atoi(n)
 		if visited[i] {
@@ -50,16 +48,15 @@ type Instruction struct {
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 
-
 	lines := strings.Split(input, "\n")
-	instructions := make([]Instruction,0)
+	instructions := make([]Instruction, 0)
 	for i, _ := range lines {
 		split := strings.Split(lines[i], " ")
 		instruction, n := split[0], split[1]
 		number, _ := strconv.Atoi(n)
 		instructions = append(instructions, Instruction{code: instruction, number: number})
 	}
-	for index,instruction := range instructions {
+	for index, instruction := range instructions {
 		if instruction.code == "jmp" {
 			instructions[index].code = "nop"
 		} else if instruction.code == "nop" {
@@ -100,12 +97,12 @@ func Part2(input string) int {
 
 func main() {
 	start := time.Now()
-	input := utils.Input(2020,8)
+	input := utils.Input(2020, 8)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
 	fmt.Println("Parse data: \t", time.Since(start))
 	start = time.Now()
 	fmt.Println("Part 1: ", Part1(input), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: ", Part2(input),"\t", time.Since(start))
+	fmt.Println("Part 2: ", Part2(input), "\t", time.Since(start))
 }

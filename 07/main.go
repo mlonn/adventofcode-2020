@@ -12,11 +12,10 @@ import (
 type Bag struct {
 	color string
 	count int
-	bags []Bag
+	bags  []Bag
 }
 
-
-func parseBags(input string) map[string]Bag{
+func parseBags(input string) map[string]Bag {
 	bags := make(map[string]Bag)
 	bagRegex, _ := regexp.Compile("(\\d+) (.*) bags?")
 	for _, bagString := range strings.Split(input, "\n") {
@@ -37,31 +36,31 @@ func parseBags(input string) map[string]Bag{
 	return bags
 }
 
-func canContainGold(color string, bags map[string]Bag) bool{
+func canContainGold(color string, bags map[string]Bag) bool {
 	if color == "shiny gold" {
 		return true
 	}
 	for _, containedBag := range bags[color].bags {
-		if canContainGold(containedBag.color, bags){
+		if canContainGold(containedBag.color, bags) {
 			return true
 		}
 	}
 	return false
 }
 
-func countBags(color string, bags map[string]Bag) int{
+func countBags(color string, bags map[string]Bag) int {
 	count := 0
 	bag := bags[color]
 	for _, containedBag := range bag.bags {
 		subCount := countBags(containedBag.color, bags)
-		count += containedBag.count + containedBag.count * subCount
+		count += containedBag.count + containedBag.count*subCount
 	}
 	return count
 }
 
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
-	bags :=parseBags(input)
+	bags := parseBags(input)
 	sum := 0
 	for _, bag := range bags {
 		if canContainGold(bag.color, bags) && bag.color != "shiny gold" {
@@ -71,8 +70,6 @@ func Part1(input string) int {
 	return sum
 }
 
-
-
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 	bags := parseBags(input)
@@ -81,10 +78,10 @@ func Part2(input string) int {
 
 func main() {
 	start := time.Now()
-	input := utils.Input(2020,7)
+	input := utils.Input(2020, 7)
 	fmt.Println("Read file: \t", time.Since(start))
 	start = time.Now()
 	fmt.Println("Part 1: ", Part1(input), "\t", time.Since(start))
 	start = time.Now()
-	fmt.Println("Part 2: ", Part2(input),"\t", time.Since(start))
+	fmt.Println("Part 2: ", Part2(input), "\t", time.Since(start))
 }
