@@ -19,9 +19,9 @@ type rules map[string]rule
 
 type ticket []int
 
-type possiblilties map[int][]string
+type possibilities map[int][]string
 
-func makeTicket(ticketString string) ticket {
+func parseTicket(ticketString string) ticket {
 	ticketSplit := strings.Split(ticketString, ",")
 	returnTicket := make(ticket, len(ticketSplit))
 	for i, s := range ticketSplit {
@@ -31,7 +31,7 @@ func makeTicket(ticketString string) ticket {
 	return returnTicket
 }
 
-func makeSpan(s string) span {
+func parseSpan(s string) span {
 	minmax := strings.Split(s, "-")
 	min, _ := strconv.Atoi(minmax[0])
 	max, _ := strconv.Atoi(minmax[1])
@@ -46,16 +46,15 @@ func parse(input string) (rules, ticket, []ticket) {
 		split := strings.Split(part, ": ")
 		key := split[0]
 		ruleSplit := strings.Split(split[1], " or ")
-		lower := makeSpan(ruleSplit[0])
-		upper := makeSpan(ruleSplit[1])
+		lower := parseSpan(ruleSplit[0])
+		upper := parseSpan(ruleSplit[1])
 		rules[key] = rule{lower: lower, upper: upper}
 	}
-
-	myTicket := makeTicket(strings.Split(parts[1], "\n")[1])
+	myTicket := parseTicket(strings.Split(parts[1], "\n")[1])
 	nearByTicketsSplit := strings.Split(parts[2], "\n")[1:]
 	nearByTickets := make([]ticket, len(nearByTicketsSplit))
 	for i, nt := range nearByTicketsSplit {
-		nearByTickets[i] = makeTicket(nt)
+		nearByTickets[i] = parseTicket(nt)
 	}
 	return rules, myTicket, nearByTickets
 }
@@ -103,7 +102,8 @@ func (t ticket) getValidRules(r rules) map[int][]string {
 	}
 	return valid
 }
-func (p possiblilties) removeFound(i int, found string) {
+
+func (p possibilities) removeFound(i int, found string) {
 	for j, keys := range p {
 		if i != j {
 			newKeys := make([]string, 0)
@@ -116,6 +116,20 @@ func (p possiblilties) removeFound(i int, found string) {
 		}
 
 	}
+}
+
+func (p possibilities) update(i int, val []string, found int) int {
+	if rules, exists := p[i]; exists {
+		intersect := intersection(rules, val)
+		p[i] = intersect
+		if len(intersect) == 1 {
+			found++
+			p.removeFound(i, intersect[0])
+		}
+	} else {
+		p[i] = val
+	}
+	return found
 }
 
 func intersection(a []string, b []string) []string {
@@ -149,37 +163,23 @@ func Part1(input string) int {
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 	r, myTicket, nearByTickets := parse(input)
-	possibleKeys := make(possiblilties)
+	possible := make(possibilities)
 	found := 0
 	for found <= len(r) {
 		for _, t := range nearByTickets {
 			validRules := t.getValidRules(r)
 			for i, val := range validRules {
-				found = possibleKeys.update(i, val, found)
+				found = possible.update(i, val, found)
 			}
 		}
 	}
 	sum := 1
-	for position, rule := range possibleKeys {
+	for position, rule := range possible {
 		if strings.Contains(rule[0], "departure") {
 			sum *= myTicket[position]
 		}
 	}
 	return sum
-}
-
-func (p possiblilties) update(i int, val []string, found int) int {
-	if rules, exists := p[i]; exists {
-		intersect := intersection(rules, val)
-		p[i] = intersect
-		if len(intersect) == 1 {
-			found++
-			p.removeFound(i, intersect[0])
-		}
-	} else {
-		p[i] = val
-	}
-	return found
 }
 
 func main() {
