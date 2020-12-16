@@ -9,78 +9,73 @@ import (
 )
 
 type number struct {
-	number      string
 	first, last int
+	seen        bool
 }
 
-func parseNumbers(input string) (map[string]number, string, int) {
-	numbers := make(map[string]number)
-	lastNumber := ""
-	turn := 1
-	for _, s := range strings.Split(input, ",") {
-		numbers[s] = number{first: turn, number: s, last: -1}
-		turn++
-		lastNumber = s
+type game map[int]number
+
+func parseNumbers(input string) (game, int) {
+	numbers := make(game)
+	var last int
+	for i, s := range strings.Split(input, ",") {
+		n, _ := strconv.Atoi(s)
+		numbers[n] = number{first: i + 1}
+		last = n
 	}
-	return numbers, lastNumber, turn
+	return numbers, last
 }
 
-func incNumbers(numbers map[string]number, lastNumber string, turn int) (map[string]number, string) {
-	n, ok := numbers[lastNumber]
+func (g game) next(previous int) int {
+	n := g[previous]
+	if !n.seen {
+		return 0
+	} else {
+		return n.last - n.first
+	}
+
+}
+
+func (g game) update(next int, turn int) {
+	n, ok := g[next]
 	if !ok {
-		numbers[lastNumber] = number{first: turn, last: -1, number: lastNumber}
-		updateLastSaid("0", numbers, turn)
-		return numbers, "0"
+		g[next] = number{first: turn}
 	} else {
-		if n.last == -1 {
-			updateLastSaid("0", numbers, turn)
-			return numbers, "0"
+		if !n.seen {
+			n.last = turn
+			n.seen = true
 		} else {
-			nextNumber := strconv.Itoa(n.last - n.first)
-			_, ok := numbers[nextNumber]
-			if ok {
-				updateLastSaid(nextNumber, numbers, turn)
-			} else {
-				numbers[nextNumber] = number{first: turn, last: -1, number: nextNumber}
-			}
-
-			return numbers, nextNumber
+			n.first, n.last = n.last, turn
 		}
-
+		g[next] = n
 	}
-}
-
-func updateLastSaid(number string, numbers map[string]number, turn int) {
-	n := numbers[number]
-	if n.last == -1 {
-		n.last = turn
-	} else {
-		n.first, n.last = n.last, turn
-	}
-	numbers[number] = n
 }
 
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
-
-	numbers, lastNumber, turn := parseNumbers(input)
+	game, _ := parseNumbers(input)
+	previous := -1
+	turn := len(game) + 1
 	for turn <= 2020 {
-		numbers, lastNumber = incNumbers(numbers, lastNumber, turn)
+		next := game.next(previous)
+		game.update(next, turn)
+		previous = next
 		turn++
 	}
-	l, _ := strconv.Atoi(lastNumber)
-	return l
+	return previous
 }
 
 // Part2 Part2 of puzzle
 func Part2(input string) int {
-	numbers, lastNumber, turn := parseNumbers(input)
+	game, previous := parseNumbers(input)
+	turn := len(game) + 1
 	for turn <= 30000000 {
-		numbers, lastNumber = incNumbers(numbers, lastNumber, turn)
+		next := game.next(previous)
+		game.update(next, turn)
+		previous = next
 		turn++
 	}
-	l, _ := strconv.Atoi(lastNumber)
-	return l
+	return previous
 }
 
 func main() {
