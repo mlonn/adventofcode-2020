@@ -3,7 +3,6 @@ package main
 import (
 	"advent-of-code-2020/utils"
 	"fmt"
-	"reflect"
 	"strconv"
 	"strings"
 	"time"
@@ -19,6 +18,8 @@ type rule struct {
 type rules map[string]rule
 
 type ticket []int
+
+type possiblilties map[int][]string
 
 func makeTicket(ticketString string) ticket {
 	ticketSplit := strings.Split(ticketString, ",")
@@ -78,7 +79,8 @@ func (t ticket) getErrorSum(r rules) int {
 	}
 	return errorSum
 }
-func (t ticket) getValidRules(r rules) map[int]map[string]bool {
+
+func (t ticket) getValidRules(r rules) map[int][]string {
 	validForPositions := make(map[int]map[string]bool)
 	for i, n := range t {
 		validRules := make(map[string]bool)
@@ -91,7 +93,47 @@ func (t ticket) getValidRules(r rules) map[int]map[string]bool {
 			validForPositions[i] = validRules
 		}
 	}
-	return validForPositions
+	valid := make(map[int][]string)
+	for i, set := range validForPositions {
+		list := make([]string, 0)
+		for s := range set {
+			list = append(list, s)
+		}
+		valid[i] = list
+	}
+	return valid
+}
+func (p possiblilties) removeFound(i int, found string) {
+	for j, keys := range p {
+		if i != j {
+			newKeys := make([]string, 0)
+			for _, i := range keys {
+				if i != found {
+					newKeys = append(newKeys, i)
+				}
+			}
+			p[j] = newKeys
+		}
+
+	}
+}
+
+func intersection(a []string, b []string) []string {
+	set := make(map[string]bool)
+	hash := make(map[string]bool)
+	for _, el := range a {
+		hash[el] = true
+	}
+	for _, el := range b {
+		if _, found := hash[el]; found {
+			set[el] = true
+		}
+	}
+	list := make([]string, 0)
+	for s := range set {
+		list = append(list, s)
+	}
+	return list
 }
 
 // Part1 Part 1 of puzzle
@@ -104,53 +146,40 @@ func Part1(input string) int {
 	return errorSum
 }
 
-func intersection(a map[string]bool, b map[string]bool) map[string]bool {
-	set := make(map[string]bool)
-	hash := make(map[string]bool)
-	for el := range a {
-		hash[el] = true
-	}
-	for el := range b {
-		if _, found := hash[el]; found {
-			set[el] = true
-		}
-	}
-	return set
-}
-
 // Part2 Part2 of puzzle
 func Part2(input string) int {
 	r, myTicket, nearByTickets := parse(input)
-	valid := make(map[int]map[string]bool)
-	positions := make(map[int]string)
-	for len(positions) < len(r) {
+	possibleKeys := make(possiblilties)
+	found := 0
+	for found <= len(r) {
 		for _, t := range nearByTickets {
-			ticketPosition := t.getValidRules(r)
-			for i, val := range ticketPosition {
-				if _, found := valid[i]; found {
-					intersect := intersection(valid[i], val)
-					valid[i] = intersect
-					if len(intersect) == 1 {
-						key := reflect.ValueOf(intersect).MapKeys()[0].String()
-						positions[i] = key
-						for j, v := range valid {
-							delete(v, key)
-							valid[j] = v
-						}
-					}
-				} else {
-					valid[i] = val
-				}
+			validRules := t.getValidRules(r)
+			for i, val := range validRules {
+				found = possibleKeys.update(i, val, found)
 			}
 		}
 	}
 	sum := 1
-	for position, rule := range positions {
-		if strings.Contains(rule, "departure") {
+	for position, rule := range possibleKeys {
+		if strings.Contains(rule[0], "departure") {
 			sum *= myTicket[position]
 		}
 	}
 	return sum
+}
+
+func (p possiblilties) update(i int, val []string, found int) int {
+	if rules, exists := p[i]; exists {
+		intersect := intersection(rules, val)
+		p[i] = intersect
+		if len(intersect) == 1 {
+			found++
+			p.removeFound(i, intersect[0])
+		}
+	} else {
+		p[i] = val
+	}
+	return found
 }
 
 func main() {
