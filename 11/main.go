@@ -161,7 +161,6 @@ func Part1(input string) int {
 		current, next = next, current
 		step++
 	}
-	fmt.Println("Steps: ", step)
 	return current.GetOccupied()
 	panic("Not found")
 }
@@ -184,7 +183,6 @@ func Part2(input string) int {
 		}
 		step++
 	}
-	fmt.Println("Steps: ", step)
 	return current.GetOccupied()
 	panic("Not found")
 }
