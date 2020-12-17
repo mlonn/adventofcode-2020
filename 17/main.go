@@ -8,13 +8,7 @@ import (
 	"strings"
 	"time"
 )
-
-type Grid struct {
-	g  [][][]string
-	xl int
-	yl int
-	zl int
-}
+g
 type Point struct {
 	x, y, z, w int
 }
