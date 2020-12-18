@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 )
-g
+
 type Point struct {
 	x, y, z, w int
 }
