@@ -30,7 +30,7 @@ func parseInput(input string) (int, []Bus) {
 // Part1 Part 1 of puzzle
 func Part1(input string) int {
 	timestamp, busses := parseInput(input)
-	minWait := math.MaxInt32
+	minWait := math.MaxInt8
 	minBus := 0
 	for _, bus := range busses {
 		wait := 0
@@ -41,6 +41,7 @@ func Part1(input string) int {
 			minWait = wait
 			minBus = bus.interval
 		}
+
 	}
 	return (minWait - timestamp) * minBus
 }
@@ -59,8 +60,6 @@ func Part2(input string) int {
 			interval: bus.interval,
 		})
 	}
-	fmt.Println(busses)
-	fmt.Println(alignedBusses)
 	step := 1
 	t := 0
 	for _, bus := range alignedBusses {
